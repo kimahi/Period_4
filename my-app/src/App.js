@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PicArray from './components/PicArray'
+
 import './App.css';
 
 class App extends Component {
@@ -32,52 +34,13 @@ class App extends Component {
     ]
   };
 
-
-
-
-
   render() {
     console.log(this.state.picArray[0].thumbnails.w160);
     return (
       <div className="App">
         <table>
           <tbody>
-          <tr>
-            <td>
-              <img src={this.state.picArray[0].thumbnails.w160} alt="Title"></img>
-            </td>
-            <td>
-              <h3>{this.state.picArray[0].title}</h3>
-              <p>{this.state.picArray[0].description}.</p>
-            </td>
-            <td>
-              <a href="#">View</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src={this.state.picArray[1].thumbnails.w160} alt="Title"></img>
-            </td>
-            <td>
-              <h3>{this.state.picArray[1].title}</h3>
-              <p>{this.state.picArray[1].description}</p>
-            </td>
-            <td>
-              <a href="#">View</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src={this.state.picArray[2].thumbnails.w160} alt="Title"></img>
-            </td>
-            <td>
-              <h3>{this.state.picArray[2].title}</h3>
-              <p>{this.state.picArray[2].description}</p>
-            </td>
-            <td>
-              <a href="#">View</a>
-            </td>
-          </tr>
+          <PicArray picarray={this.state.picArray}/>
           </tbody>
         </table>
       </div>
