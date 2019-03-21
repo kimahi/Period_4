@@ -12,7 +12,7 @@ class PicArray extends Component {
             <p>{ar.description}.</p>
           </td>
           <td>
-            <a href="#">View</a>
+            <a href={ar.filename}>View</a>
           </td>
         </tr>
     ));
