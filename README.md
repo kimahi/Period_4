@@ -1,4 +1,4 @@
 # Period_4
-##AJAX Task A
+## AJAX Task A
 
 [Link to demo](http://users.metropolia.fi/~kimbj/4_periodi/http-a/)
