@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 class PicArray extends Component {
   render() {
-    return this.props.picarray.map((ar) =>(
-        <tr>
+    return this.props.picArray.map((ar, i) =>(
+        <tr key={i}>
           <td>
             <img src={ar.thumbnails.w160} alt="Title"></img>
           </td>
@@ -12,11 +12,13 @@ class PicArray extends Component {
             <p>{ar.description}.</p>
           </td>
           <td>
-            <a href="#">View</a>
+            <a href={ar.filename}>View</a>
           </td>
         </tr>
     ));
   }
 }
+
+
 
 export default PicArray;
