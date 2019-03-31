@@ -18,7 +18,7 @@ class App extends Component {
 
   render() {
     return (
-        <Router>
+        <Router basename="/~kimbj/4_periodi/route">
           <div className="container">
             <Nav/>
             <Route exact path="/" render={(props) => (
